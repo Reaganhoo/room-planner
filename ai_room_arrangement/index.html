@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Room Planner MVP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Room Planner</h1>
+
+  <div id="controls">
+    <label>Room Width (ft): <input type="number" id="roomWidth" value="20"></label>
+    <label>Room Length (ft): <input type="number" id="roomLength" value="20"></label>
+    <button onclick="updateRoom()">Set Room</button>
+    <br><br>
+    <label>Furniture Name: <input type="text" id="furnitureName" value="New Furniture"></label>
+    <label>Width (ft): <input type="number" id="furnitureWidth" value="3"></label>
+    <label>Length (ft): <input type="number" id="furnitureLength" value="2"></label>
+    <button onclick="addFurniture()">Add Furniture</button>
+  </div>
+
+  <canvas id="gridCanvas"></canvas>
+
+  <h2>Furniture List</h2>
+  <div id="furnitureList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
