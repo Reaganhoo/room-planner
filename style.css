@@ -1,28 +1,16 @@
 body {
-    text-align: center;
     font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 18px;
   }
   
-  #controls {
-    margin-bottom: 15px;
-  }
+  #controls { margin-bottom: 12px; }
   
   #gridCanvas {
-    border: 1px solid black;
+    border: 1px solid #222;
+    cursor: pointer;
     display: block;
-    margin: 0 auto;
-    background: white;
-  }
-  
-  #furnitureList {
-    width: 80%;
-    margin: 20px auto;
-    text-align: left;
-  }
-  
-  .furniture-item {
-    border: 1px solid #ddd;
-    padding: 8px;
-    margin-bottom: 5px;
+    margin: 10px auto;
+    /* canvas size will be set by script based on room */
   }
   
