@@ -13,16 +13,26 @@
     <label>Room Length (ft): <input type="number" id="roomLength" value="20"></label>
     <button onclick="updateRoom()">Set Room</button>
     <br><br>
-    <label>Furniture Name: <input type="text" id="furnitureName" value="New Furniture"></label>
-    <label>Width (ft): <input type="number" id="furnitureWidth" value="3"></label>
-    <label>Length (ft): <input type="number" id="furnitureLength" value="2"></label>
-    <button onclick="addFurniture()">Add Furniture</button>
+
+    <label>Type:
+      <select id="objectType" onchange="setDefaults()">
+        <option value="furniture">Furniture</option>
+        <option value="window">Window</option>
+        <option value="door">Door</option>
+        <option value="plug">Plug</option>
+      </select>
+    </label>
+
+    <label>Name: <input type="text" id="objectName"></label>
+    <label>Width (ft): <input type="number" id="objectWidth"></label>
+    <label>Height (ft): <input type="number" id="objectHeight"></label>
+
+    <button onclick="addObject()">Add</button>
+    <button onclick="updateObject()">Update Selected</button>
+    <button onclick="rotate()">Rotate</button>
   </div>
 
   <canvas id="gridCanvas"></canvas>
-
-  <h2>Furniture List</h2>
-  <div id="furnitureList"></div>
 
   <script src="script.js"></script>
 </body>
